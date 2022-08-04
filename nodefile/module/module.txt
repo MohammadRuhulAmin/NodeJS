@@ -1,0 +1,12 @@
+
+how does node file know require() function ?? 
+
+=> 
+
+(function(exports,require,module,__filename,__dirname){
+
+    let x = 5;
+    console.log(x);
+    module.exports = x;
+    return module.exports;
+})()
