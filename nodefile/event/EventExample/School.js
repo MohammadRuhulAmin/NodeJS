@@ -9,6 +9,7 @@ class School extends EventEmitter{
             });
         },3000)
     }
+    
     endPeriod(){
         console.log('Class has Ended');
         setTimeout(()=>{
