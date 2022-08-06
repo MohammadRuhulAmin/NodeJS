@@ -1,0 +1,19 @@
+
+Stream meaning => probaho 
+data probaho 
+
+buffer like data type 
+
+Stream onek gula buffer er shomoshti
+
+chunk => ektu ektu kore vag kora ! 
+
+Stream hocche Jhorna -> buffer hocche jhornar ek ekta fota !
+
+data read korar shomoy ==> Read Stream 
+data write korar shomoy ==> Write Stream 
+
+Image of Stream Buffer relation  : 
+    
+    --->https://prnt.sc/SIHR4rBS5rGD
+

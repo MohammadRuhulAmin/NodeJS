@@ -8,6 +8,8 @@ school.on('EndClass',({time,message})=>{
     console.log(`${time} + ${message}`)
 })
 
+
+
 school.startPeriod();
 school.endPeriod();
 
