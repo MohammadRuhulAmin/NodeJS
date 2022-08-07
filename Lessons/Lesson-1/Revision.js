@@ -13,13 +13,25 @@ fs.writeFile('./docs/docs_1.txt',string,(error)=>{
     }
 })
 
+
 if(fs.existsSync('./assets')){
     fs.rmdir('./assets',()=>{
         console.log('Folder deleated successfully')
     })
-    
-}else{
+}
+else{
     fs.mkdir('./assets',()=>{
         console.log('Asset folder added successfully')
     })
 }
+
+const readStream = fs.createReadStream('./docs/docs_2.txt','utf-8')
+const writeStream = fs.createWriteStream('./docs/docx.txt')
+
+readStream.on('data',(chunk)=>{
+    console.log('dd')
+    console.log(chunk.toString())
+    writeStream.write(chunk,(err)=>{
+        console.log('done')
+    })
+})
